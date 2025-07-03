@@ -1,8 +1,8 @@
 {
   "id": "278206",
-  "name": "Imageopt",
+  "name": "Image Optimizer",
   "modes": [
     "canvas"
   ],
-  "icon": "/icon.svg"
+  "icon": "🧩"
 }

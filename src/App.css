@@ -7,4 +7,29 @@ main {
     padding: 0 15px 15px 15px;
     height: 100%;
     gap: 15px;
+    overflow-y: auto;
+}
+
+/* Additional styles for the image optimizer */
+.image-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #fafafa;
+}
+
+.image-thumbnail {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.status-badge {
+    margin-left: 8px;
+    padding: 2px 6px;
+    color: white;
+    border-radius: 3px;
+    font-size: 10px;
 }
