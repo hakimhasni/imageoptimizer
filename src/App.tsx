@@ -1059,23 +1059,25 @@ export function App() {
                 {validatingLicense ? 'Validating license...' : 'Validate License'}
               </button>
               
-              <button
-                onClick={handleResetLicense}
-                style={{
-                  width: '100%',
-                  height: '44px',
-                  padding: '0 16px',
-                  backgroundColor: '#ef4444',
-                  color: 'white',
-                  border: 'none',
-                  borderRadius: '8px',
-                  fontSize: '14px',
-                  fontWeight: '500',
-                  cursor: 'pointer'
-                }}
-              >
-                Reset License (Dev)
-              </button>
+              {process.env.NODE_ENV === 'development' && (
+                <button
+                  onClick={handleResetLicense}
+                  style={{
+                    width: '100%',
+                    height: '44px',
+                    padding: '0 16px',
+                    backgroundColor: '#ef4444',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '8px',
+                    fontSize: '14px',
+                    fontWeight: '500',
+                    cursor: 'pointer'
+                  }}
+                >
+                  Reset License (Dev)
+                </button>
+              )}
             </div>
           </div>
         </div>
@@ -1183,23 +1185,25 @@ export function App() {
                 disabled={true}
               />
               
-              <button
-                onClick={handleResetLicense}
-                style={{
-                  width: '100%',
-                  height: '44px',
-                  padding: '0 16px',
-                  backgroundColor: '#ef4444',
-                  color: 'white',
-                  border: 'none',
-                  borderRadius: '8px',
-                  fontSize: '14px',
-                  fontWeight: '500',
-                  cursor: 'pointer'
-                }}
-              >
-                Reset License
-              </button>
+              {process.env.NODE_ENV === 'development' && (
+                <button
+                  onClick={handleResetLicense}
+                  style={{
+                    width: '100%',
+                    height: '44px',
+                    padding: '0 16px',
+                    backgroundColor: '#ef4444',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '8px',
+                    fontSize: '14px',
+                    fontWeight: '500',
+                    cursor: 'pointer'
+                  }}
+                >
+                  Reset License
+                </button>
+              )}
             </div>
           </div>
         </div>
